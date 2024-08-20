@@ -11,7 +11,9 @@ import { ReactComponent as SplashIcon } from './assets/splash-icon.svg';
 import Logo from './assets/logo.png';
 import ErrorBox from './components/Reusable/ErrorBox';
 import { ALL_DESCRIPTIONS } from './utilities/DateConstants';
-import GitHubIcon from '@mui/icons-material/GitHub';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+import { TiWeatherPartlySunny } from "react-icons/ti";
+
 import {
   getTodayForecastWeather,
   getWeekForecastWeather,
@@ -191,20 +193,21 @@ function App() {
             />
 
             <UTCDatetime />
-            {/* <Link
-              href="https://github.com/Amin-Awinti"
-              target="_blank"
+            <Link
+              // href="https://github.com/Amin-Awinti"
+              // target="_blank"
               underline="none"
               sx={{ display: 'flex' }}
             >
-              <GitHubIcon
+              <TiWeatherPartlySunny
                 sx={{
                   fontSize: { xs: '20px', sm: '22px', md: '26px' },
                   color: 'white',
                   '&:hover': { color: '#2d95bd' },
                 }}
+                fontSize={'30px'}
               />
-            </Link> */}
+            </Link>
           </Box>
           <Search onSearchChange={searchChangeHandler} />
         </Grid>
