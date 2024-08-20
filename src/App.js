@@ -191,7 +191,7 @@ function App() {
             />
 
             <UTCDatetime />
-            <Link
+            {/* <Link
               href="https://github.com/Amin-Awinti"
               target="_blank"
               underline="none"
@@ -204,7 +204,7 @@ function App() {
                   '&:hover': { color: '#2d95bd' },
                 }}
               />
-            </Link>
+            </Link> */}
           </Box>
           <Search onSearchChange={searchChangeHandler} />
         </Grid>
